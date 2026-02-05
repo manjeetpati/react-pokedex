@@ -13,7 +13,7 @@ const PokemonHome: React.FC<{}> = () => {
 
     const [pageCount, setPageCount] = useState(10);
 
-    const handlePageChange = (event: React.ChangeEvent<unknown>, value: number) => {
+    const handlePageChange = (_event: React.ChangeEvent<unknown>, value: number) => {
         callPokemonApi(value, 30);
     }
 
