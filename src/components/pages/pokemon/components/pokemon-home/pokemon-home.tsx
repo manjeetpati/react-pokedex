@@ -2,9 +2,9 @@ import Pagination from '@mui/material/Pagination';
 import { PokemonList } from './pokemon-list';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { fetchPokemons } from '../api/pokemon-api';
-import { setPage, updatePokemons } from '../../../../../../utils/store/pokemonSlice';
+import { fetchPokemons } from '../../api/pokemon-api';
 import './pokemon.scss'
+import { setPage, updatePokemons } from '../../../../../utils/store/pokemonSlice';
 
 const PokemonHome: React.FC<{}> = () => {
     const dispatch = useDispatch();
