@@ -1,6 +1,7 @@
+import { RouterProvider } from 'react-router-dom';
 import './App.css'
-import Home from './components/pages/home/components/home';
 import { Layout } from './components/ui/layout/Layout';
+import { router } from './utils/router';
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <>
     <div className="App">
       <Layout>
-        <Home />
+        <RouterProvider router={router} />
       </Layout>
     </div>
     </>

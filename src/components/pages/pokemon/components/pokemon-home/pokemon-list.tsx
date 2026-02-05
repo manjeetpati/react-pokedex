@@ -1,6 +1,7 @@
 import React from "react"
-import PokemonCard from "./pokemon-card";
+
 import './pokemon.scss';
+import PokemonCard from "./pokemon-card";
 
 
 type Pokemon = { name: string; url: string };

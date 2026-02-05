@@ -1,10 +1,14 @@
 import React from 'react';
-import PokemonHome from './pokemon/components/pokemon-home';
+import { useNavigate } from 'react-router-dom';
 
 
 const Home: React.FC<{}> = () => {
+    const navigate = useNavigate();
     return (
-        <PokemonHome />
+        <div>
+            <h1>Welcome to the Home Page</h1>
+            <button onClick={() => navigate('/pokemons')}>Open Pokemon</button>
+        </div>
     );
 };
 
